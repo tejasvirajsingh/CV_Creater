@@ -1,0 +1,118 @@
+\documentclass[10pt,a4paper,withhyper]{altacv}
+
+% === Page Layout ===
+\geometry{left=1.25cm,right=1.25cm,top=1.2cm,bottom=1.2cm,columnsep=1cm}
+\usepackage{paracol}
+\usepackage{tikz}
+
+% === Font Setup ===
+\iftutex
+  \setmainfont{Lato}
+\else
+  \usepackage[default]{lato}
+\fi
+
+% === Blue Color Theme ===
+\definecolor{DeepBlue}{HTML}{0055A4}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+
+\colorlet{heading}{DeepBlue}
+\colorlet{headingrule}{DeepBlue}
+\colorlet{accent}{DeepBlue}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% === Style Adjustments ===
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\AtBeginEnvironment{itemize}{\small\setlength\itemsep{0pt}}
+
+% === Document Start ===
+\begin{document}
+
+\name{Tejasvi Raj Singh}
+\tagline{Software Engineer | Student at Parul University}
+\photoR{2.4cm}{}
+\personalinfo{
+  \email{tejasvirajsingh2003@gmail.com}
+  \phone{+91 9905896***8}
+  \location{Vadodara, Gujarat}
+  \linkedin{tejasvirajsingh}
+  \homepage{https://tejasvimax.netlify.app/}
+  \xtwitter{@tejasvimax}
+}
+
+\makecvheader
+
+\columnratio{0.6}
+\begin{paracol}{2}
+
+% ===== Left Column =====
+\cvsection{Education}
+
+\cvevent{B.Tech in Computer Science Engineering}{Parul University, Vadodara}{2023 -- 2027}{}
+\begin{itemize}
+\item CGPA: 8.5 / 10
+\item Volunteer, TechFest 2025
+\item Member, Google Developer Student Club
+\end{itemize}
+
+\divider
+
+\cvevent{Higher Secondary (12th Board)}{Veer Kunwar Singh University, Bihar}{2020 -- 2022}{}
+\begin{itemize}
+\item Year of Completion: 2022
+\item Percentage: 66\%
+\end{itemize}
+
+\divider
+
+\cvevent{Secondary (10th Board)}{M.D.J Public School, Bihar}{2018 -- 2020}{}
+\begin{itemize}
+\item Year of Completion: 2020
+\item Percentage: 73\%
+\end{itemize}
+
+\divider
+
+\cvevent{Achievements \& Certifications}{Professional Growth}{2023 -- 2025}{}
+\begin{itemize}
+\item Azure Cloud Foundation – [Microsoft]
+\item AWS Academy Graduate – Cloud Foundation
+\item Oracle Cloud Foundation Associate
+\item AI Fundamentals – [IBM]
+\item Cisco Networking Academy
+\item Data Analyst 101 – [Microsoft SkillUp]
+\end{itemize}
+
+\switchcolumn
+
+% ===== Right Column =====
+\cvsection{Technical Skills}
+\cvtag{C} \cvtag{C++} \cvtag{DSA} \cvtag{Java (Beginner)}\\
+\cvtag{Python} \cvtag{HTML5} \cvtag{CSS3}\\
+\cvtag{JavaScript} \cvtag{Tailwind CSS}\\
+\cvtag{Git} \cvtag{GitHub} \cvtag{VS Code}\\
+\cvtag{Netlify} \cvtag{Software Engineering} \cvtag{DBMS}
+
+\divider
+
+\cvsection{Strengths}
+\cvtag{Hard-working} \cvtag{Consistency}
+ \cvtag{Problem Solving}
+\cvtag{Quick Learner} 
+
+\divider
+
+\cvsection{Languages}
+\cvskill{C}{4}
+\cvskill{C++}{3}
+\cvskill{JavaScript}{2}
+\cvskill{Java}{2.5}
+
+\divider
+
+
+
+\end{paracol}
+\end{document}
